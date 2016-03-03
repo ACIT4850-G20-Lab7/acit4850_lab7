@@ -9,14 +9,20 @@ William Hu
 Ziqi Miao
 Emilio Wu
 
+*******************
 Server Requirements
+*******************
 
 CodeIgniter 3.0
 
+*******
 License
+*******
 
 Please see the license agreement.
 
+*********
 Resources
+*********
 
 CodeIgniter
