@@ -19,6 +19,9 @@ and open the template in the editor.
 <!ATTLIST days
     type (monday|tuesday|wednesday|thursday|friday) #REQUIRED
 >
+<!-- A time has only one in a weekday -->
+<!ELEMENT times (start,days+)>
+
 <!-- A course include info of a course -->
 <!ELEMENT course (id,name,crn,type,building,room,start,end,instructor)>
 <!ATTLIST course
@@ -55,4 +58,4 @@ and open the template in the editor.
 <!ELEMENT starttime (name,crn,type,building,room,end,instructor)>
 <!ATTLIST starttime
     type (0830|0930|1030|1130|1230|1330|1430|1530|1630|1730) #REQUIRED
-> 
+>
