@@ -18,6 +18,7 @@ and open the template in the editor.
             <room>306</room>
             <start>1330</start>
             <end>1520</end>
+             <instructor>Trevor Lord</instructor>
         </course>
         <course type="acit">
             <id>4910</id>
@@ -28,6 +29,7 @@ and open the template in the editor.
             <room>206</room>
             <start>1530</start>
             <end>1620</end>
+             <instructor>Richard Chau</instructor>
         </course>
         <course type="acit">
             <id>4650</id>
@@ -38,6 +40,7 @@ and open the template in the editor.
             <room>205</room>
             <start>1630</start>
             <end>1720</end>
+            <instructor>Medhat Elmasry</instructor>
         </course>
     </days>
 </week>
