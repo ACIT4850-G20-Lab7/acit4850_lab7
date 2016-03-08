@@ -20,7 +20,7 @@ and open the template in the editor.
     type (monday|tuesday|wednesday|thursday|friday) #REQUIRED
 >
 <!-- A course include info of a course -->
-<!ELEMENT course (id,name,crn,type,building,room,start,end)>
+<!ELEMENT course (id,name,crn,type,building,room,start,end,instructor)>
 <!ATTLIST course
     type (acit|comp) #REQUIRED
 >
@@ -40,3 +40,19 @@ and open the template in the editor.
 <!ELEMENT start (#PCDATA)>
 <!-- end time of the class -->
 <!ELEMENT end (#PCDATA)>
+<!-- instructor of the class -->
+<!ELEMENT instructor (#PCDATA)>
+
+<!-- courses element under root element week-->
+<!ELEMENT courses (id,day*)>
+<!ATTLIST courses 
+    type (acit|comp) #REQUIRED
+>
+<!ELEMENT day (starttime) >
+<!ATTLIST day
+    type (monday|tuesday|wednesday|thursday|friday) #REQUIRED
+>
+<!ELEMENT starttime (name,crn,type,building,room,end,instructor)>
+<!ATTLIST starttime
+    type (0830|0930|1030|1130|1230|1330|1430|1530|1630|1730) #REQUIRED
+> 
